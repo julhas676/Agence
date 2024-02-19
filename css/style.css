@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'inter', sans-serif;
+}
+
+ul ,ol {
+    list-style: none;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 15px 42px;
+    background-color: var(--secoundry_color);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: var(--primary_color);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+:root{
+    --primary_color: #fff;
+    --secoundry_color: #6A4DF4;
+    --background_color: #f3f3f3;
+}
+
+
+/*Common Heading Start*/
+    #heading{
+        width: 100%;
+        padding-top: 80px;
+        
+    }
+
+    .main_heading{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+ 
+    }
+
+    .main_heading h2{
+        font-size: 45px;
+        font-weight: 700;
+    }
+    .heading__samary{
+        text-align: center;
+        width: 610px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 16px;
+        font-weight: 400;
+        
+    }
+        
+/*Common Heading End*/
+
+/*==================== Common Css End ========================*/
+
+/* ====================== NavBar Section Stat ====================  */
+
+#navbar{
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+   
+}
+.mainNav{
+    width: 100%;
+    display: flex;
+ 
+}
+
+.navLogo{
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+}
+
+.navLogo__Image{
+    margin-top: 18px;
+}
+
+.navItem{
+    width: 60%;
+    display: flex;
+}
+.mainItem{
+    align-items: center;
+   display: flex;
+   margin: 0 auto;
+
+}
+.mainItem li a{
+    margin-left: 65px;
+    color: var(--primary_color);
+    font-size: 18px;
+    font-weight: 400;
+}
+.navBtn{
+    width: 20%;
+    height: 80px;
+}
+.navBtn__bottom{
+    margin-left: 80px;
+    margin-top: 18px;
+ 
+}
+.mainItem{
+    display: flex;
+    
+}
+.mainItem li{
+    padding-left: 20px;
+}
+
+/* ====================== NavBar Section End ==================== */
+
+/* ====================== Banner Section Start ==================== */
+#banner{
+    background: url(../Image/agenc-Banner\ 1.jpg);
+    padding: 123px 0 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    z-index: -1;
+}
+.bannerTextWraper{
+    height: 100%;
+}
+
+.bannerTextWraper__btn{
+    width: 185px;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.bannerTextWraper__title{
+    width: 850px;
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--primary_color);
+    text-align: center;
+    padding-top: 124px;
+    padding-bottom: 51px;
+    margin-left: 150px;
+}
+
+.bannerTextWraper__sammary{
+    font-size: 16px;
+    font-weight: 400;
+    width: 621px;
+    color: var(--primary_color);
+    text-align: center;
+    margin-bottom: 40px;
+    margin-left: 250px;
+}
+
+.dot{
+margin-left: 498px;
+}
+.dot .dot_item{
+    width: 22px;
+    height: 24px;
+    background-color: var(--secoundry_color);
+    display: inline-block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-top: 50px;
+}
+
+.dot .dot_item:hover{
+    border: 2px solid var(--primary_color);
+}
+/* ====================== Banner Section End ==================== */
+
+
+/* ====================== Success Section Start ==================== */
+
+#success{
+    width: 100%;
+    height: 400px;
+}
+
+.main_success{
+    width: 1100px;
+    height: 300px;
+    background-color: #E0FFF9;
+    margin-top: 180px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+}
+
+.success__text{
+    width: 40%;
+    height: 300px;
+    padding-top: 85px;
+    padding-left: 30px;
+}
+.success__text p{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    color: var(--secoundry_color);
+}
+
+.success__text h2{
+    font-size: 35px;
+    font-weight: 600;
+    width: 387px;
+}
+
+.success_count{
+    display: flex;
+    padding-top: 85px;
+}
+.count_item h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #151515;
+    padding-right: 110px;
+} 
+.count_item p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #737373;
+    padding-top: 20px;
+}
+
+
+/* ====================== Success Section End ==================== *
+
+/* ====================== Services Section Start ==================== */
+
+.service_item{
+    width: 324px;
+    height: 428px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 70px;
+margin-left: 40px;
+}
+
+.icon__service{
+    width: 98px;
+    height: 80px;
+}
+
+.service_item:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.item_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.item_title{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.item_sammary{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ====================== Services Section End ==================== */
+
+/* ====================== Work Section Start ==================== */
+
+#work{
+    width: 100%;
+    background-color: #F3F3F3;
+    height: 1370px;
+}
+
+.main_work{
+   margin-top: 106px;
+}
+.main_heading {
+    padding-top: 150px;
+}
+.work_item{
+    width: 324px;
+    height: 424px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.work_item:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.work_image img{
+    width: 324px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.work_text{
+    width: 240px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.work_item_heading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.fast_line_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.second_line_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+}
+/* ====================== Work Section End ==================== */
+
+/* ====================== Choose Section Stat ==================== */
+.main_choose{
+    display: flex;
+}
+.choose_provide{
+    width: 60%;
+}
+
+.choose_image{
+    width: 40%;
+}
+.line_item{
+    display: flex;
+}
+
+/* .second_line_item{
+    display: flex;
+} */
+.choose_title{
+    width: 518px;
+    text-align: center; 
+}
+.choose_item_icon{
+    padding-bottom: 20px;
+    padding-top: 50px;
+    margin-left: 5px;
+}
+
+.choose_item{
+    width: 350px;
+    height: 280px;
+    margin-bottom: 10px;
+
+}
+.choose_item_text{
+    margin-left: 5px;
+}
+
+.choose_item_text h2{
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.choose_item_text p{
+    font-size: 16px;
+    font-weight: 400;
+    width: 300px;
+    line-height: 26px;
+}
+
+.choose_bg_image{
+    width: 428px;
+    height: 428px;
+    margin-top: 100px;
+}
+
+/* ====================== Choose Section End ==================== */
+
+/* ====================== Reviews Section Start ==================== */
+    .review_part{
+        width: 100%;
+        position: relative;
+    }
+
+    .review_item{
+        width: 424px;
+        height: 424px;  
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        margin-bottom: 30px;
+}
+
+.review_item:hover{
+    background-color: #F4EFEF;
+}
+
+    .review_icon{
+        padding-top: 54px;
+        margin-left: 54px;
+    }
+
+    .review_text p{
+        padding-top: 20px;
+        width: 307px;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 39px;
+        color: #9c9c9c;
+    }
+
+    .review_star{
+        margin-left: 39px;
+        padding-top: 20px;
+        color: #F9BD2C;
+    }
+
+    .reviewer{
+    margin-left: 39px;
+    display: flex;
+    margin-top: 30px;
+    }
+
+    .reviewers_info{
+        padding-left: 20px;
+    }
+
+    .review_part{
+        display: flex;
+    }
+
+    .left_slid_btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: #6A4DF4;
+        position: absolute;
+        top: 200px;
+        left: -20px;
+      
+}
+
+.left_slid_btn i{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+}
+
+.right_slid_btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #6A4DF4;
+    position: absolute;
+    top: 200px;
+    right: -20px;
+}
+
+.right_slid_btn i{
+    position: absolute;
+    color: #fff;
+    top: 10px;
+    left: 10px;
+}
+/* ====================== Reviews Section End ==================== */
+
+/* ====================== Form Section Start ==================== */
+#form{
+    background-color: #f3f3f3;
+    width: 100%;
+    height: 680px;
+}
+    .form_text{
+        width: 60%;
+        margin-left: 50px;
+        margin-top: 250px;
+    }
+    .form{
+        width: 40%;
+
+    }
+
+    .build_form{
+        width: 336px;
+        height: 480px;
+        background-color: #fff;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-top: 150px;
+        padding-left: 42px;
+}
+
+.form_heading{
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 600;
+
+}
+    .main_form{
+        display: flex;
+    }
+    .form_text h2{
+        width: 470px;
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    .form_text p{
+        width: 514px;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #7B7B7B;
+    }
+
+    input{
+       width: 260px;
+       height: 44px;
+       border: 1px solid #d0d0d0;
+       outline: none;
+       border-radius: 10px;
+       -webkit-border-radius: 10px;
+       -moz-border-radius: 10px;
+       -ms-border-radius: 10px;
+       -o-border-radius: 10px;
+       padding-left: 20px;
+       margin-top: 10px;
+}
+
+.form_btn{
+   margin-right: 30px;
+}
+/* ====================== Form Section End ==================== */
+
+/* ====================== Footer Section Start ==================== */
+
+
+#footer{
+    width: 100%;
+    height: 400px;
+}
+
+.main_footer{
+    display: flex;
+}
+.footer_info{
+    width: 40%;
+}
+.footer_all_item{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_logo{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+
+.footer_summary{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7B7B7B;
+    width: 356px;
+    cursor: pointer;
+}
+
+.footer_item{
+    padding-top: 120px;
+}
+.footer_item h2{
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item_list {
+    font-size: 16px;
+    font-weight: 400;
+    color: #7B7B7B;
+    line-height: 40px;
+}
+
+.footer_bottom{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+
+}
+
+.footer_bottom hr{
+    color: #7B7B7B;
+}
+
+.footer_bottom p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 33px;
+    color: #7B7B7B;
+}
+
+/* ====================== Footer Section End ==================== */
